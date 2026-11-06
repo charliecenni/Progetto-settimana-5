@@ -1,0 +1,231 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-padding-top: 200px;
+
+}
+body{
+    background-color: #fafafa;
+    color: #1a1a1a;
+    
+
+}
+header{
+	background-color:white;
+	height: 120px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	padding: 10px;
+    border-bottom: #eee;
+    color: #1a1a1a;
+    h3{
+        text-align: center;
+        color:hsl(150, 60%, 30%) ;
+    }
+    nav ul{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        list-style: none;
+        gap: 20px;
+        
+        a{
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: bold;
+        }
+        a:hover{
+            border:1px solid  hsl(150, 60%, 95%) ;
+            border-radius: 12px;
+            background-color:  hsl(150, 60%, 95%);
+            color:hsl(150, 60%, 30%) ;
+            padding: 5px 10px;
+        }
+    }
+    button{
+        border: 1px solid transparent;
+        border-radius: 50%;
+
+       
+    } 
+    button:hover{
+            background-color:  hsl(150, 60%, 95%);
+            color:hsl(150, 60%, 30%) ;
+            font-weight: bold;
+        }
+
+
+}
+.scrolled {
+    background-color:hsl(150, 60%, 30%)  ;
+    color:hsl(150, 60%, 95%) ;
+    
+}
+.scrolledTitle{
+    color: white;
+}
+.scrolledBtn{
+    background-color:hsl(150, 60%, 30%) ;
+}
+
+#section1 {
+   color: white;
+   background-color:hsl(150, 60%, 30%) ;
+   height: 400px;;
+   display: flex;
+   
+  /* .div1 h1, .div1 p  {
+   text-align: center;
+   }
+   .div1 button{
+    display: block;
+    margin: 0 auto;
+   }*/
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+     p{
+       text-align: center; 
+    }
+    button{
+      border-radius: 48px;
+      background-color: white;
+      color: hsl(150, 60%, 30%);
+      font-weight: 800;
+      padding: 3% 5%;  
+    }
+    button:hover{
+        background-color: hsl(150, 60%, 95%);
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+#modal.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 400px;
+    color: hsl(150, 60%, 30%);
+}
+body.modal-open{
+    overflow: hidden;
+}
+.layout form {
+    color: hsl(150, 60%, 30%)
+
+}
+label{
+    color: #1a1a1a;
+    font-weight: bold;
+}
+input,
+textarea,
+select {
+    background-color:white;
+    padding: 1%;
+    border: 3px solid #fbf8f1;
+    border-radius: 12px;
+
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+    
+    border: 3px solid hsl(150, 60%, 30%) ;
+}
+#submitForm{
+font-weight: bold;
+border-radius:48px ;
+padding: 3% 5%;
+background-color: hsl(150, 60%, 30%);
+color: white;
+
+}
+#submitForm:hover{
+    background-color:hsl(150, 60%, 95%) ;
+    color: hsl(150, 60%, 30%);
+}
+.closeForm {
+    cursor: pointer;
+}
+
+.positionAbs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    width: 50px;
+    background-color: transparent;
+    border: transparent;
+    color: hsl(150, 60%, 30%);
+}
+
+#lavori h2{
+    text-align: center;
+    color: hsl(150, 60%, 30%);
+}
+.gallery {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.gallery-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 400px;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow:4px 4px 8px #E9E9E9;
+    transition: 0.5s;
+    
+}
+.gallery-item:hover{
+    box-shadow: 4px 4px 8px lightgrey;
+}
+
+.gallery-item img{
+    width: 400px;
+    height: 400px;
+    border-radius: 12px ;
+    box-shadow: #fafafa;
+}
+#servizi h2{
+    text-align: center;
+    color: hsl(150, 60%, 30%);
+}
+.services{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 10px;
+}
