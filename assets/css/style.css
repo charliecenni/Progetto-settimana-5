@@ -227,5 +227,68 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
-gap: 10px;
+gap: 15px;
 }
+.service-item{
+    background-color: white;
+    box-shadow:4px 4px 8px #E9E9E9;
+    width: 400px;
+    border-radius: 12px;
+    transform: translateY(3px);
+    transition: transform 0.5s, box-shadow 0.5s;
+
+}
+.service-item:hover{
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 8px lightgrey ;
+}
+.service-item span{
+    color: hsl(150, 60%, 30%);
+    font-weight: bold;
+    font-size: 50px;
+}
+#team h2{
+    text-align: center;
+    color:hsl(150, 60%, 30%)
+}
+.team{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 15px;
+}
+.team-member{
+background-color: white;
+    box-shadow:4px 4px 8px #E9E9E9;
+    width: 400px;
+    border-radius: 12px;
+    transform: translateY(3px);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.team-member:hover{
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 8px lightgrey ;
+}
+ .photo-member{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid hsl(150, 60%, 95%);
+    width: 100px;
+    height: 100px;
+    background-color: hsl(150, 60%, 30%);
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    
+}
+
+
+.team-member h3 + p {
+    font-weight: bold;
+    color: hsl(150, 60%, 30%);
+
+}
+
