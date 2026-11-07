@@ -10,6 +10,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     scroll-padding-top: 200px;
+    
 
 }
 
@@ -486,4 +487,34 @@ footer a{
     
 }
     }
+}
+@media screen and (min-width:1200px) {
+    #section1 h1{
+        margin-top: 5%;
+    }
+    .gallery-item{
+        width: 32%;
+        height: 600px;
+        img{
+            width: 600px;
+            height: 600px;
+        }
+    }
+    .services div:nth-child(3){
+            width:30% ;
+        }
+        .services div{
+            width: 30%;
+            height: 200px;
+           
+        }
+        .team div:nth-child(3){
+            width: 400px;
+        }
+        .team{
+            gap: 35px;
+        }
+       
+        
+    
 }
