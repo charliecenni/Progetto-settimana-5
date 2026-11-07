@@ -329,7 +329,6 @@ select:hover {
     text-align: center;
     color: hsl(150, 60%, 30%);
     font-size: 1.5em;
-    margin-bottom: 40%;
 }
 .italic{
     font-style: italic;
@@ -337,64 +336,93 @@ select:hover {
 .carousel-item {
     background-color: white;
     box-shadow: 4px 4px 8px #E9E9E9;
-    width: 400px;
+    width:400px;
+    height: fit-content;
     border-radius: 12px;
-    width: 15%;
 	position: absolute;
-	right: 0;
-	opacity: 0%;
-	animation: divCarousel 10s linear infinite;
+	top: 50px;
+    left: 0;
+	opacity: 0;
+    transform: translateX(400px);
+	animation: divCarousel 32s linear infinite;
    
 }
-
+.carousel-item:nth-child(1){
+    animation-delay: 0s;
+}
 .carousel-item:nth-child(2) {
-	animation-delay: 2.5s;
+	animation-delay: 8s;
 }
 
 .carousel-item:nth-child(3) {
-	animation-delay: 5s;
+	animation-delay: 16s;
 }
 
 .carousel-item:nth-child(4) {
-	animation-delay: 7.5s;
+	animation-delay: 24s;
 }
 
 @keyframes divCarousel {
 	0% {
 		opacity: 0%;
-		filter: grayscale(100%);
-		right: 0;
+		
+		transform: translateX(400px);
 	}
-	20% {
-		opacity: 50%;
+	3% {
+		opacity: 1;
 		filter: grayscale(50%);
-		right: 20%;
+		transform: translateX(400px);
 	}
-	40% {
-		opacity: 100%;
-		filter: grayscale(0%);
-		right: 40%;
+	
+    22% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+	25% {
+		transform: translateX(-400px);
+        opacity: 0;
 	}
-	60% {
-		right: 60%;
-	}
-	80% {
-		opacity: 50%;
-		filter: grayscale(50%);
-		right: 80%;
-	}
-	100% {
+	
+	25.1%,100% {
 		opacity: 0%;
-		filter: grayscale(100%);
-		right: 100%;
+		
+		transform: translateX(-400px);
 	}
 }
 #carousel{
- display: flex;
+text-align: center;
+position: relative;
+height: 400px;
+width: 400px;
+overflow: hidden;
+margin: 0 auto;
+
+}
+.carousel-item:hover {
+	animation-delay: 0;
+	animation-play-state: paused;
+}
+
+footer{
+    height: 200px;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+footer div h3,footer h3 span{
+    color: hsl(150, 60%, 30%);
+}
+.social{
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    position: relative;
-	height: 200px;
-
+    gap: 25px;
+}
+.social div{
+    height: 30px;
+    width: 30px;
+    padding: 1% 1%;
+    border-radius: 50%;
+    background-color:rgba(128, 128, 128, 0.3) ;
+    
 }
