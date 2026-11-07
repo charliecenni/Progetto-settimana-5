@@ -4,14 +4,17 @@ window.onscroll = function() {
   const header = document.getElementById("header");
   const button1 = document.getElementById("button1");
   const title = document.getElementById("title");
+  const ulLink = document.getElementById("ulLink");
   if (window.scrollY > 400) {
     header.classList.add("scrolled");
     button1.classList.add("scrolledBtn");
     title.classList.add("scrolledTitle");
+    ulLink.classList.add("scrolledNav");
   } else {
     header.classList.remove("scrolled");
     button1.classList.remove("scrolledBtn");
     title.classList.remove("scrolledTitle");
+    ulLink.classList.remove("scrolledNav");
   }
 };
 
