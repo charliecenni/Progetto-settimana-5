@@ -90,7 +90,9 @@ header {
 .scrolledBtn {
     background-color: hsl(150, 60%, 30%);
 }
-
+main{
+    width: 80;
+}
 #section1 {
     color: white;
     background-color: hsl(150, 60%, 30%);
@@ -514,7 +516,7 @@ footer a{
         .team{
             gap: 35px;
         }
-       
+     
         
     
 }
